@@ -1,11 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:orientation="vertical">
+	android:background="@android:color/white"
+	>
 
-	<TextView
+	<ImageView
+		android:id="@android:id/icon"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="Dzień dobry, Rafale."/>
-</LinearLayout>
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="50dp"
+		android:src="@drawable/logo"/>
+
+	<Button
+		android:id="@+id/play"
+		style="@style/ButtonWelcome"
+		android:layout_below="@android:id/icon"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="20dp"
+		android:text="@string/play"/>
+
+	<Button
+		android:id="@+id/settings"
+		style="@style/ButtonWelcome"
+		android:layout_below="@+id/play"
+		android:layout_centerHorizontal="true"
+		android:text="@string/settings"/>
+
+	<Button
+		android:id="@+id/learn"
+		style="@style/ButtonWelcome"
+		android:layout_below="@+id/settings"
+		android:layout_centerHorizontal="true"
+		android:text="@string/learn"/>
+
+	<Button
+		android:id="@+id/high_scores"
+		style="@style/ButtonWelcome"
+		android:layout_below="@+id/learn"
+		android:layout_centerHorizontal="true"
+		android:text="@string/high_scores"/>
+</RelativeLayout>
