@@ -9,12 +9,14 @@ import android.view.ViewGroup;
 /**
  * Created by Kasia on 2016-02-27.
  */
-public class FragmentMainMenu extends Fragment {
+public class FragmentWelcome extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		View v = inflater.inflate(R.layout.fragment_main_menu, null);
+		View v = inflater.inflate(R.layout.fragment_welcome, null);
 		return v;
 	}
 
-	public static FragmentMainMenu getInstance() {return new FragmentMainMenu();}
+	public static FragmentWelcome getInstance() {
+		return new FragmentWelcome();
+	}
 }
