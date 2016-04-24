@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pl.donutgroup.colormaster.FragmentGameSelectColor">
+
+
+    <TextView
+        android:id="@+id/textViewWhichColorIs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/which_box_is" />
+    <TextView
+        android:id="@+id/textViewColorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWhichColorIs"
+        android:layout_centerHorizontal="true"
+        android:text="@string/color"
+        android:textSize="40sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewColorName"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/top_left_button"
+            style="@style/ButtonSelectColor"
+            />
+
+        <Button
+            android:id="@+id/top_right_button"
+            style="@style/ButtonSelectColor"
+            />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bottom_left_button"
+            style="@style/ButtonSelectColor"
+            />
+
+        <Button
+            android:id="@+id/bottom_right_button"
+            style="@style/ButtonSelectColor"
+            />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
